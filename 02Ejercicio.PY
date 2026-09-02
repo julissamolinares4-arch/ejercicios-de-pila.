@@ -1,8 +1,8 @@
-# Cear un programa en python que permita guardar el primer nombre de las personas.
+
 # EJERCICIO 2: PILA DE NOMBRES
 
 
-# 1. Función para agregar un nombre
+
 def agregar_nombre(pila):
     nombre = input("Ingrese el primer nombre: ")
 
@@ -10,8 +10,6 @@ def agregar_nombre(pila):
 
     print("Nombre agregado correctamente.")
 
-
-# 2. Función para eliminar un nombre
 def eliminar_nombre(pila):
     if len(pila) == 0:
         print("La pila está vacía.")
@@ -19,16 +17,12 @@ def eliminar_nombre(pila):
         nombre = pila.pop()
         print("Nombre eliminado:", nombre)
 
-
-# 3. Función para mostrar el último elemento
 def mostrar_cima(pila):
     if len(pila) == 0:
         print("La pila está vacía.")
     else:
         print("Elemento en la cima:", pila[-1])
 
-
-# 4. Función para buscar un elemento
 def buscar_nombre(pila):
     nombre = input("Ingrese el nombre que desea buscar: ")
 
@@ -37,15 +31,11 @@ def buscar_nombre(pila):
     else:
         print("El nombre no se encuentra en la pila.")
 
-
-# 5. Función para contar elementos
 def contar_elementos(pila):
     cantidad = len(pila)
 
     print("La pila tiene", cantidad, "elemento(s).")
 
-
-# 6. Función para mostrar todos los elementos
 def mostrar_pila(pila):
     if len(pila) == 0:
         print("La pila está vacía.")
@@ -55,19 +45,14 @@ def mostrar_pila(pila):
         for nombre in reversed(pila):
             print(nombre)
 
-
-# 7. Función para limpiar la pila
 def limpiar_pila(pila):
     pila.clear()
 
     print("La pila ha sido limpiada.")
 
 
-# Crear la pila
 pila = []
 
-
-# Menú principal
 while True:
 
     print("\n***** MENU DE OPCIONES *****")
