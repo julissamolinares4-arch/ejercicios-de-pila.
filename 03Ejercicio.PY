@@ -6,18 +6,16 @@ class PilaDeque:
     def __init__(self):
         self._items = deque()
 
-    # Método para agregar
     def push(self, departamento):
         self._items.append(departamento)
 
-    # Método para remover
+    
     def pop(self):
         if len(self._items) > 0:
             return self._items.pop()
         else:
             return None
 
-    # Método para imprimir
     def mostrar(self):
         if len(self._items) == 0:
             print("La pila está vacía.")
@@ -26,12 +24,8 @@ class PilaDeque:
             for departamento in reversed(self._items):
                 print(departamento)
 
-
-# Crear la pila
 pila = PilaDeque()
 
-
-# Lista de departamentos de Nicaragua
 departamentos_nicaragua = [
     "Boaco",
     "Carazo",
@@ -50,8 +44,6 @@ departamentos_nicaragua = [
     "Rivas"
 ]
 
-
-# Menú
 while True:
 
     print("\n===== MENÚ DE PILA =====")
