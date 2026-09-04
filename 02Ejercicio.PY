@@ -1,8 +1,6 @@
 
 # EJERCICIO 2: PILA DE NOMBRES
 
-
-
 def agregar_nombre(pila):
     nombre = input("Ingrese el primer nombre: ")
 
@@ -49,7 +47,6 @@ def limpiar_pila(pila):
     pila.clear()
 
     print("La pila ha sido limpiada.")
-
 
 pila = []
 
